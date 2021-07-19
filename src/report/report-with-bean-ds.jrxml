@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report-with-bean-ds" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7adcc4ed-306e-4a2c-8dc7-d7019e3d2599">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Id" class="java.lang.Integer"/>
+	<field name="Name" class="java.lang.String"/>
+	<field name="Address" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="28" width="555" height="30" uuid="6bd7e953-4fdf-4cd5-8ae5-c404648e764c"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report With Bean Data Source]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="140" height="30" uuid="97ec91c1-3a07-4cb6-900a-8abe2d7a7e85">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d5f3ce9-d3f9-46e3-93f2-b0128bfa36c4"/>
+				</reportElement>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="0" width="230" height="30" uuid="afe5a395-054c-47dc-ab44-62cfa4129cb5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edf783b5-75df-443e-b71e-bfe743cb8a41"/>
+				</reportElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" uuid="56b196b9-34e3-4247-8e66-1228c713a680">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="65a72bfe-d52d-4b46-802c-fdaa42a4443b"/>
+				</reportElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="140" height="30" uuid="74c68080-f893-4963-9c59-8738e933e726">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3d5f3ce9-d3f9-46e3-93f2-b0128bfa36c4"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="230" height="30" uuid="75db790e-3a02-4ba8-892d-86da1beda373">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="edf783b5-75df-443e-b71e-bfe743cb8a41"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="6c7d33f9-3bef-46ff-b67f-9d85ff70ec25">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="65a72bfe-d52d-4b46-802c-fdaa42a4443b"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
